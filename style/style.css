@@ -5,31 +5,75 @@ body {
 }
 
 p {
-    color: gray;
+    color: black;
 }
 
 h2 {
-    color: rgb(240, 132, 18);
+    color: red;
     font-size: x-large;
-}
-
-h3 {
-    color: #343a40;
 }
 
 header {
     position: fixed;
     width: 20%;
     height: 100%;
-    padding: auto;
-    background-color: #343a40;
-    background-color: rgb(240, 132, 18);
+    background-color: #1979d9;
 
 }
 
-header h3 {
-    text-align: center;
+.sid_nav_barre {
+    position: fixed;
+    width: 100%;
+    right: -100%;
+    height: 300px;
+    background-color: rgba(216, 211, 211, 0.5);
+    background-color: #1979d9;
+    transition: ease-in-out 0.5s;
+}
+
+.sid_nav_barrejs {
+    right: -0%;
+    transition: ease-in-out 0.5s;
+}
+
+.close {
+    cursor: pointer;
+    float: right;
     color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.close:hover {
+    font-size: 30px;
+}
+
+.sid_nav_barre ul {
+    position: relative;
+    top: 25px;
+    right: 30px;
+}
+
+.sid_nav_barre ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sid_nav_barre ul li a {
+    text-decoration: none;
+    color: white;
+    transition: ease 0.5s;
+}
+
+.sid_nav_barre ul li a:hover {
+    letter-spacing: 10px;
+    transition: ease 0.5s;
+}
+
+.openMenu {
+    cursor: pointer;
+    display: none;
 }
 
 nav {
@@ -49,25 +93,19 @@ nav ul li {
 nav ul li a {
     display: block;
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 15px;
     transition: 0.5s;
-    background-color: white;
-    color: #343a40;
-    color: rgb(240, 132, 18);
+    background-color: rgba(216, 211, 211, 0.5);
+    color: white;
     border-top-left-radius: 20px;
     /* border-bottom-left-radius: 20px;*/
 }
 
 nav ul li a:hover {
-    font-size: x-large;
+    letter-spacing: 10px;
+    background-color: #1979d9;
     transition: 0.5s;
-}
-
-nav ul li a:focus {
-    font-size: large;
 }
 
 main {
@@ -89,15 +127,11 @@ main div {
 
 .accueil h1 {
     font-size: 250%;
-    color: #343a40;
+    color: #1979d9;
 }
 
 .accueil h3 {
-    color: rgb(240, 132, 18);
-}
-
-.accueil h3 {
-    color: #343a40;
+    color: #1979d9;
 
 }
 
@@ -113,7 +147,6 @@ main div {
 .accueil ol li {
     padding-top: 10px;
     list-style-type: upper-roman;
-    color: rgb(240, 132, 18);
     color: #343a40;
     font-weight: bold;
 }
@@ -123,8 +156,11 @@ main div {
 }
 
 .services {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.services h3 {
+    color: #1979d9;
 }
 
 .services p {
@@ -137,14 +173,14 @@ main div {
 
 .services ul li {
     padding-top: 10px;
-    list-style-type: circle;
+    list-style-type: none;
     font-weight: bold;
-    color: rgb(240, 132, 18);
     color: #343a40;
 }
 
 .equipe {
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .prestataire {
@@ -156,6 +192,7 @@ main div {
     justify-content: center;
     text-align: center;
 
+
 }
 
 article {
@@ -165,8 +202,13 @@ article {
     text-align: center;
     box-sizing: content-box;
     background-color: grey;
+    background-color: red;
     color: white;
     transition: 0.5s;
+}
+
+.articleBg_color {
+    background-color: #1979d9;
 }
 
 article img {
@@ -174,14 +216,15 @@ article img {
     height: 200px;
 }
 
-.articleImg {
+.articleJSeffet {
     flex-basis: 30%;
-    text-transform: uppercase;
+    background-color: gray;
     transition: 0.5s;
 }
 
 .realisations {
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     text-align: center;
 }
 
@@ -192,6 +235,7 @@ h3 {
 
 .realisations h3 {
     padding-bottom: 50px;
+    color: #1979d9;
 }
 
 .realisations img {
@@ -217,31 +261,33 @@ h3 {
 
 .listepartenaires div img {
     width: 100%;
+    border-radius: 50%;
 }
 
 .formulaire_contact {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
-    width: 80%;
+    width: 70%;
     text-align: center;
-    color: gray;
-    box-shadow: 5px 5px 5px gainsboro;
-    border-radius: 10px;
+    box-shadow: 2px 2px 10px gainsboro;
+
 }
 
 form input {
-    color: rgb(240, 132, 18);
     font-style: normal;
     font-weight: bold;
-    accent-color: rgb(240, 132, 18);
+    background-color: white;
 }
 
 form input[type="text"],
 input[type="tel"],
 form input[type="email"] {
-    width: 99%;
-    border: 2px solid gainsboro;
+    width: 90%;
+    height: 30px;
+    background-color: white;
     border-radius: 5px;
+    border: 1px solid gray;
+    color: red;
 }
 
 form input[type="text"],
@@ -249,47 +295,59 @@ input[type="tel"],
 form input[type="email"]::-webkit-input-placeholder {
     opacity: 0.5;
     padding: 5px;
-    padding-left: 10px;
-    font-style: italic;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-form input[type="text"],
-input[type="tel"],
-form input[type="email"]:focus {
-    outline: none;
-}
-
-form input[type="text"],
-input[type="tel"],
-form input[type="email"] {
-    height: 30px;
+textarea {
+    width: 90%;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 button {
     width: 40%;
     height: 45px;
-    border: none;
+    background-color: white;
+    color: #1979d9;
+    border: 1px solid #1979d9;
     border-radius: 5px;
     transition: 0.5s;
 }
 
 button:hover {
     font-weight: bold;
+    border: none;
+    background-color: #1979d9;
+    color: white;
     transition: 0.5s;
 }
 
+footer {
+    margin-top: 200px;
+}
+
+footer a {
+    text-decoration: none;
+    color: gray;
+}
+
 .copyright {
+    font-size: small;
     text-align: center;
 }
 
-@media screen and (max-width:860px) {
+@media screen and (max-width:980px) {
     header {
         display: block;
         width: 100%;
         height: 5%;
         z-index: 1;
+    }
+
+    .openMenu {
+        display: block;
+        padding: 5px;
     }
 
     nav {
@@ -314,6 +372,12 @@ button:hover {
         margin-top: 10px;
     }
 
+    .articleJSeffet {
+        flex-basis: 50%;
+        letter-spacing: 2px;
+        transition: 0.5s;
+    }
+
     .realisations img {
         width: 49%;
         padding: 0px;
@@ -325,19 +389,28 @@ button:hover {
 
     .formulaire_contact {
         width: 90%;
-        border-radius: 0px;
     }
 
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:700px) {
     article {
         margin: auto;
         flex-basis: 90%;
         margin-top: 10px;
     }
 
+    .articleJSeffet {
+        flex-basis: 90%;
+        letter-spacing: 0px;
+        transition: 0.5s;
+    }
+
     .realisations img {
         width: 80%;
+    }
+
+    footer {
+        margin-top: 100px;
     }
 }
