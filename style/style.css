@@ -265,6 +265,7 @@ h3 {
 
 .realisations img:hover {
     width: 41%;
+    background-color: whitesmoke;
 }
 
 .partenaires h3 {
