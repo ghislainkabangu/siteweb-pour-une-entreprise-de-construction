@@ -1,4 +1,5 @@
 /** @format */
+
 /***********************menu *******************************/
 let openMenu = document.querySelector(".openMenu");
 let closeMenu = document.querySelector(".close");
@@ -10,14 +11,14 @@ closeMenu.addEventListener("click", () => {
   menu.classList.remove("sid_nav_barrejs");
 });
 
-/*********************************************** */
+/**************************************************** */
 let link = document.querySelectorAll(".link");
 for (let x = 0; x < link.length; x++) {
   link[x].addEventListener("click", () => {
     menu.classList.remove("sid_nav_barrejs");
   });
 }
-/******************** GETION DES INTERACTION DES IMAGES DES MEMBRES DE L'EQUIPE********************************* */
+/********************** GETION DES INTERACTION DES IMAGES DES MEMBRES DE L'EQUIPE********************************* */
 let article = document.querySelectorAll("article");
 for (let j = 0; j < article.length; j++) {
   article[j].addEventListener("mouseover", () => {
@@ -28,3 +29,9 @@ for (let j = 0; j < article.length; j++) {
     article[j].classList.remove("articleJSeffet");
   });
 }
+/********************************maps************************** */
+let maps = document.getElementById("maps");
+fetch(
+  "https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1"
+).then((res)=>res.json()).then(data=>maps.src=data[0].url);
+//

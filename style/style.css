@@ -9,7 +9,7 @@ p {
 }
 
 h2 {
-    color: red;
+    color: rgb(150, 3, 3);
     font-size: x-large;
 }
 
@@ -17,17 +17,15 @@ header {
     position: fixed;
     width: 20%;
     height: 100%;
-    background-color: #1979d9;
-
+    background-color: rgb(150, 3, 3);
 }
 
 .sid_nav_barre {
     position: fixed;
     width: 100%;
     right: -100%;
-    height: 300px;
-    background-color: rgba(216, 211, 211, 0.5);
-    background-color: #1979d9;
+    height: 350px;
+    background-color: rgb(150, 3, 3);
     transition: ease-in-out 0.5s;
 }
 
@@ -67,7 +65,7 @@ header {
 }
 
 .sid_nav_barre ul li a:hover {
-    letter-spacing: 10px;
+    font-weight: bold;
     transition: ease 0.5s;
 }
 
@@ -77,7 +75,7 @@ header {
 }
 
 nav {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 nav ul {
@@ -86,26 +84,25 @@ nav ul {
 
 nav ul li {
     display: block;
-    padding-top: 50px;
-
+    padding-top: 40px;
 }
 
 nav ul li a {
     display: block;
+    font-weight: bold;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 15px;
-    transition: 0.5s;
-    background-color: rgba(216, 211, 211, 0.5);
     color: white;
-    border-top-left-radius: 20px;
-    /* border-bottom-left-radius: 20px;*/
+    border-bottom: 3px solid white;
+    background-color: rgb(85, 80, 80, 0.5);
+    transition: ease 0.5s
 }
 
 nav ul li a:hover {
-    letter-spacing: 10px;
-    background-color: #1979d9;
-    transition: 0.5s;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transition: ease 0.5s
 }
 
 main {
@@ -127,11 +124,15 @@ main div {
 
 .accueil h1 {
     font-size: 250%;
-    color: #1979d9;
+    color: rgb(150, 3, 3);
+}
+
+.accueil h2 {
+    color: gray;
 }
 
 .accueil h3 {
-    color: #1979d9;
+    color: rgb(150, 3, 3);
 
 }
 
@@ -157,10 +158,27 @@ main div {
 
 .services {
     margin-top: 100px;
+    animation: monAnim 5s alternate infinite;
+}
+
+@keyframes monAnim {
+    form {
+        background: white;
+        transition: 0.5s;
+    }
+
+    to {
+
+        background: url(../img/brand.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transition: 0.5s;
+    }
 }
 
 .services h3 {
-    color: #1979d9;
+    color: gray;
 }
 
 .services p {
@@ -183,6 +201,10 @@ main div {
     margin-bottom: 100px;
 }
 
+.equipe h3 {
+    color: gray;
+}
+
 .prestataire {
     margin: auto;
     margin-top: 100px;
@@ -201,15 +223,12 @@ article {
     padding: auto;
     text-align: center;
     box-sizing: content-box;
-    background-color: grey;
-    background-color: red;
+    background-color: rgb(150, 3, 3);
     color: white;
     transition: 0.5s;
 }
 
-.articleBg_color {
-    background-color: #1979d9;
-}
+
 
 article img {
     width: 100%;
@@ -235,13 +254,21 @@ h3 {
 
 .realisations h3 {
     padding-bottom: 50px;
-    color: #1979d9;
+    color: gray;
 }
 
 .realisations img {
     width: 40%;
     padding: 5px;
     transition: 0.5s;
+}
+
+.realisations img:hover {
+    width: 41%;
+}
+
+.partenaires h3 {
+    color: gray;
 }
 
 .listepartenaires {
@@ -255,28 +282,49 @@ h3 {
 
 .listepartenaires div {
     text-align: center;
-    flex-basis: 20%;
+    flex-basis: 15%;
+    box-shadow: 0px 0px 2px gainsboro;
+
     box-sizing: content-box;
 }
 
 .listepartenaires div img {
-    width: 100%;
+    width: 50%;
     border-radius: 50%;
+    box-shadow: 0px 0px 5px gainsboro;
+    transition: 0.5s;
+}
+
+.localisation h3 {
+    color: gray;
+}
+
+.localisation p {
+    text-align: center;
+}
+
+.localisation img {
+    width: 50%;
+}
+
+.contact h3 {
+    color: gray;
 }
 
 .formulaire_contact {
     margin-top: 100px;
     margin-bottom: 50px;
-    width: 70%;
+    width: 65%;
+    border-radius: 5px;
     text-align: center;
-    box-shadow: 2px 2px 10px gainsboro;
-
+    box-shadow: 1px 1px 8px gainsboro;
+    background-color: white;
 }
 
 form input {
     font-style: normal;
-    font-weight: bold;
     background-color: white;
+    color: black;
 }
 
 form input[type="text"],
@@ -285,9 +333,9 @@ form input[type="email"] {
     width: 90%;
     height: 30px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 2px;
     border: 1px solid gray;
-    color: red;
+    outline-color: red;
 }
 
 form input[type="text"],
@@ -295,31 +343,28 @@ input[type="tel"],
 form input[type="email"]::-webkit-input-placeholder {
     opacity: 0.5;
     padding: 5px;
-    font-weight: normal;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 textarea {
     width: 90%;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 5px;
+    outline-color: red;
 }
 
 button {
     width: 40%;
     height: 45px;
-    background-color: white;
-    color: #1979d9;
-    border: 1px solid #1979d9;
+    border: none;
     border-radius: 5px;
+    background-color: rgb(150, 3, 3);
+    color: white;
     transition: 0.5s;
 }
 
 button:hover {
     font-weight: bold;
-    border: none;
-    background-color: #1979d9;
-    color: white;
     transition: 0.5s;
 }
 
@@ -335,6 +380,7 @@ footer a {
 .copyright {
     font-size: small;
     text-align: center;
+    color: rgb(150, 3, 3);
 }
 
 @media screen and (max-width:980px) {
@@ -383,17 +429,35 @@ footer a {
         padding: 0px;
     }
 
+    .realisations img:hover {
+        width: 50%;
+    }
+
     .listepartenaires {
         margin-top: 0px;
     }
 
+    .listepartenaires {
+        flex-wrap: wrap;
+    }
+
+    .listepartenaires div {
+        flex-basis: 30%;
+        box-shadow: 0px 0px 3px gainsboro;
+        margin-top: 10px;
+    }
+
     .formulaire_contact {
-        width: 90%;
+        width: 70%;
     }
 
 }
 
 @media screen and (max-width:700px) {
+    .services {
+        animation: none;
+    }
+
     article {
         margin: auto;
         flex-basis: 90%;
@@ -408,6 +472,14 @@ footer a {
 
     .realisations img {
         width: 80%;
+    }
+
+    .realisations img:hover {
+        width: 80%;
+    }
+
+    .formulaire_contact {
+        width: 90%;
     }
 
     footer {
