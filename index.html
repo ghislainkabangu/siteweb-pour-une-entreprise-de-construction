@@ -257,7 +257,7 @@
         </div>
         <div id="localisation" class="localisation">
             <h2>Localisation</h2>
-            <h3>Notre carte de localisation map</h3>
+            <h3>Notre carte de localisation map de Kinshasa</h3>
             <div id="map"></div>
 
 
@@ -299,16 +299,16 @@
     }).addTo(map);
     var marker = L.marker([51.5, -0.09]).addTo(map);
     var circle = L.circle([51.508, -0.11], {
-    color: 'red',
-    fillColor: '#f03',
-    fillOpacity: 0.5,
-    radius: 500
-}).addTo(map);
-var polygon = L.polygon([
-    [51.509, -0.08],
-    [51.503, -0.06],
-    [51.51, -0.047]
-]).addTo(map);
+        color: 'red',
+        fillColor: '#f03',
+        fillOpacity: 0.5,
+        radius: 500
+    }).addTo(map);
+    var polygon = L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(map);
 </script>
 <script src="js/script.js"></script>
 
