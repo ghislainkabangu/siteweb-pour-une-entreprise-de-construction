@@ -2,21 +2,13 @@ body {
     margin: auto;
     padding: auto;
     background-color: white;
-}
-
-p {
     color: black;
 }
-
-h2 {
-    color: rgb(150, 3, 3);
-    font-size: x-large;
+html{
+    scroll-behavior: smooth;
 }
-
 header {
-    position: fixed;
-    width: 20%;
-    height: 100%;
+    padding: 1px;
     background-color: rgb(150, 3, 3);
 }
 
@@ -73,49 +65,40 @@ header {
     cursor: pointer;
     display: none;
 }
-
-nav {
-    margin-top: 5%;
-}
-
 nav ul {
     list-style-type: none;
+    text-align:  center;
 }
-
 nav ul li {
-    display: block;
-    padding-top: 40px;
+    display: inline-block
 }
 
 nav ul li a {
-    display: block;
-    font-weight: bold;
+ 
     text-decoration: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 15px;
+    padding:5px;
     color: white;
     background-color: rgb(85, 80, 80, 0.5);
-    border-bottom: 3px solid white;
     transition: ease 0.5s
 }
 
 nav ul li a:hover {
-    letter-spacing: 5px;
-    text-transform: uppercase;
+    background-color: white;
+    color: rgb(150, 3, 3);
     transition: ease 0.5s
 }
 
-main {
+section {
     margin: auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    position: relative;
+   /* position: relative;
     left: 10%;
-    width: 75%;
+    width: 75%;*/
     padding: 10px;
 
 }
 
-main div {
+section div {
     margin: auto;
     padding: 20px;
     word-wrap: break-word;
@@ -381,7 +364,7 @@ footer a {
     color: rgb(150, 3, 3);
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:700px) {
     header {
         display: block;
         width: 100%;
