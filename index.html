@@ -16,9 +16,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <!---------------------------------->
+    <!-------------------Gasap--------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <!-----------------------------------carrousel-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
     <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -61,6 +64,7 @@
         <h3><i class="fa-solid fa-location-dot"></i> Nous sommes à Kinshasa / republique démocratique du congo</h3>
     </main>
     <!--------------------------------description de l'entreprise----------------------------------->
+    <section>
     <div class="description">
     <p> <b>Cogeco sarl </b>est une entreprise générale de construction de droit congolais installer à Kinshasa
         dont
@@ -95,11 +99,10 @@
             et avec les expers dans les domaines, Nous respectons nos delais de prestation de services.</p>
     </ul>
 </div>
-    <section>
-        <!--le bloc contenant les diffs services-->
+        <!-------------------le bloc contenant les diffs services-->
         <div id="services" class="services">
-            <h2>Nos Services</h2>
-            <h3>Réparation et bricolage</h3>
+            <h3>Nos Services</h3>
+            <h4>Réparation et bricolage</h4>
             <p>Qu'il s'agisse d'une première installation, d'une réfection, d'une amélioration ou d'une réparation, tout
                 ce qui est électricité, plomberie et menuiserie relèvent également de sa compétence. D'ailleurs, il est
                 possible de confier à ce prestataire l'amélioration du système de chauffage, de climatisation et
@@ -109,110 +112,67 @@
             <p>Bref, rassemblant sous le même toit tous les corps d'état en rapport avec la construction, la Company
                 générale de construction assure les services se rattachant à : </p>
             <ul>
-                <li class="licolor"> <svg class="svg-icon"
-                        style="width: 1rem; height: 1rem;vertical-align: middle;fill: currentColor;overflow: hidden;"
-                        viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0z m0 947.2c-240.64 0-435.2-194.56-435.2-435.2S271.36 76.8 512 76.8s435.2 194.56 435.2 435.2-194.56 435.2-435.2 435.2z m266.24-578.56c0 10.24-5.12 20.48-10.24 25.6l-286.72 286.72c-5.12 5.12-15.36 10.24-25.6 10.24s-20.48-5.12-25.6-10.24l-163.84-163.84c-15.36-5.12-20.48-15.36-20.48-25.6 0-20.48 15.36-40.96 40.96-40.96 10.24 5.12 20.48 10.24 25.6 15.36l138.24 138.24 261.12-261.12c5.12-5.12 15.36-10.24 25.6-10.24 20.48-5.12 40.96 15.36 40.96 35.84z"
-                            fill="rgb(150, 3, 3)" />
-                    </svg> l'architecture,</li>
-                <li><svg class="svg-icon"
-                        style="width: 1rem; height: 1rem;vertical-align: middle;fill: currentColor;overflow: hidden;"
-                        viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0z m0 947.2c-240.64 0-435.2-194.56-435.2-435.2S271.36 76.8 512 76.8s435.2 194.56 435.2 435.2-194.56 435.2-435.2 435.2z m266.24-578.56c0 10.24-5.12 20.48-10.24 25.6l-286.72 286.72c-5.12 5.12-15.36 10.24-25.6 10.24s-20.48-5.12-25.6-10.24l-163.84-163.84c-15.36-5.12-20.48-15.36-20.48-25.6 0-20.48 15.36-40.96 40.96-40.96 10.24 5.12 20.48 10.24 25.6 15.36l138.24 138.24 261.12-261.12c5.12-5.12 15.36-10.24 25.6-10.24 20.48-5.12 40.96 15.36 40.96 35.84z"
-                            fill="rgb(150, 3, 3)" />
-                    </svg> la maconnerie,</li>
-                <li class="licolor"><svg class="svg-icon"
-                        style="width: 1rem; height: 1rem;vertical-align: middle;fill: currentColor;overflow: hidden;"
-                        viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0z m0 947.2c-240.64 0-435.2-194.56-435.2-435.2S271.36 76.8 512 76.8s435.2 194.56 435.2 435.2-194.56 435.2-435.2 435.2z m266.24-578.56c0 10.24-5.12 20.48-10.24 25.6l-286.72 286.72c-5.12 5.12-15.36 10.24-25.6 10.24s-20.48-5.12-25.6-10.24l-163.84-163.84c-15.36-5.12-20.48-15.36-20.48-25.6 0-20.48 15.36-40.96 40.96-40.96 10.24 5.12 20.48 10.24 25.6 15.36l138.24 138.24 261.12-261.12c5.12-5.12 15.36-10.24 25.6-10.24 20.48-5.12 40.96 15.36 40.96 35.84z"
-                            fill="rgb(150, 3, 3)" />
-                    </svg> l'électricité,</li>
-                <li><svg class="svg-icon"
-                        style="width: 1rem; height: 1rem;vertical-align: middle;fill: currentColor;overflow: hidden;"
-                        viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0z m0 947.2c-240.64 0-435.2-194.56-435.2-435.2S271.36 76.8 512 76.8s435.2 194.56 435.2 435.2-194.56 435.2-435.2 435.2z m266.24-578.56c0 10.24-5.12 20.48-10.24 25.6l-286.72 286.72c-5.12 5.12-15.36 10.24-25.6 10.24s-20.48-5.12-25.6-10.24l-163.84-163.84c-15.36-5.12-20.48-15.36-20.48-25.6 0-20.48 15.36-40.96 40.96-40.96 10.24 5.12 20.48 10.24 25.6 15.36l138.24 138.24 261.12-261.12c5.12-5.12 15.36-10.24 25.6-10.24 20.48-5.12 40.96 15.36 40.96 35.84z"
-                            fill="rgb(150, 3, 3)" />
-                    </svg> le chauffage,</li>
-                <li class="licolor"><svg class="svg-icon"
-                        style="width: 1rem; height: 1rem;vertical-align: middle;fill: currentColor;overflow: hidden;"
-                        viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0z m0 947.2c-240.64 0-435.2-194.56-435.2-435.2S271.36 76.8 512 76.8s435.2 194.56 435.2 435.2-194.56 435.2-435.2 435.2z m266.24-578.56c0 10.24-5.12 20.48-10.24 25.6l-286.72 286.72c-5.12 5.12-15.36 10.24-25.6 10.24s-20.48-5.12-25.6-10.24l-163.84-163.84c-15.36-5.12-20.48-15.36-20.48-25.6 0-20.48 15.36-40.96 40.96-40.96 10.24 5.12 20.48 10.24 25.6 15.36l138.24 138.24 261.12-261.12c5.12-5.12 15.36-10.24 25.6-10.24 20.48-5.12 40.96 15.36 40.96 35.84z"
-                            fill="rgb(150, 3, 3)" />
-                    </svg> la plomberie,</li>
-                <li><svg class="svg-icon"
-                        style="width: 1rem; height: 1rem;vertical-align: middle;fill: currentColor;overflow: hidden;"
-                        viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0z m0 947.2c-240.64 0-435.2-194.56-435.2-435.2S271.36 76.8 512 76.8s435.2 194.56 435.2 435.2-194.56 435.2-435.2 435.2z m266.24-578.56c0 10.24-5.12 20.48-10.24 25.6l-286.72 286.72c-5.12 5.12-15.36 10.24-25.6 10.24s-20.48-5.12-25.6-10.24l-163.84-163.84c-15.36-5.12-20.48-15.36-20.48-25.6 0-20.48 15.36-40.96 40.96-40.96 10.24 5.12 20.48 10.24 25.6 15.36l138.24 138.24 261.12-261.12c5.12-5.12 15.36-10.24 25.6-10.24 20.48-5.12 40.96 15.36 40.96 35.84z"
-                            fill="rgb(150, 3, 3)" />
-                    </svg> la charpente,</li>
-                <li class="licolor"><svg class="svg-icon"
-                        style="width: 1rem; height: 1rem;vertical-align: middle;fill: currentColor;overflow: hidden;"
-                        viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0z m0 947.2c-240.64 0-435.2-194.56-435.2-435.2S271.36 76.8 512 76.8s435.2 194.56 435.2 435.2-194.56 435.2-435.2 435.2z m266.24-578.56c0 10.24-5.12 20.48-10.24 25.6l-286.72 286.72c-5.12 5.12-15.36 10.24-25.6 10.24s-20.48-5.12-25.6-10.24l-163.84-163.84c-15.36-5.12-20.48-15.36-20.48-25.6 0-20.48 15.36-40.96 40.96-40.96 10.24 5.12 20.48 10.24 25.6 15.36l138.24 138.24 261.12-261.12c5.12-5.12 15.36-10.24 25.6-10.24 20.48-5.12 40.96 15.36 40.96 35.84z"
-                            fill="rgb(150, 3, 3)" />
-                    </svg> la peinture,</li>
-                <li><svg class="svg-icon"
-                        style="width: 1rem; height: 1rem;vertical-align: middle;fill: currentColor;overflow: hidden;"
-                        viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0z m0 947.2c-240.64 0-435.2-194.56-435.2-435.2S271.36 76.8 512 76.8s435.2 194.56 435.2 435.2-194.56 435.2-435.2 435.2z m266.24-578.56c0 10.24-5.12 20.48-10.24 25.6l-286.72 286.72c-5.12 5.12-15.36 10.24-25.6 10.24s-20.48-5.12-25.6-10.24l-163.84-163.84c-15.36-5.12-20.48-15.36-20.48-25.6 0-20.48 15.36-40.96 40.96-40.96 10.24 5.12 20.48 10.24 25.6 15.36l138.24 138.24 261.12-261.12c5.12-5.12 15.36-10.24 25.6-10.24 20.48-5.12 40.96 15.36 40.96 35.84z"
-                            fill="rgb(150, 3, 3)" />
-                    </svg> la menuiserie,</li>
-                <li class="licolor"><svg class="svg-icon"
-                        style="width: 1rem; height: 1rem;vertical-align: middle;fill: currentColor;overflow: hidden;"
-                        viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0z m0 947.2c-240.64 0-435.2-194.56-435.2-435.2S271.36 76.8 512 76.8s435.2 194.56 435.2 435.2-194.56 435.2-435.2 435.2z m266.24-578.56c0 10.24-5.12 20.48-10.24 25.6l-286.72 286.72c-5.12 5.12-15.36 10.24-25.6 10.24s-20.48-5.12-25.6-10.24l-163.84-163.84c-15.36-5.12-20.48-15.36-20.48-25.6 0-20.48 15.36-40.96 40.96-40.96 10.24 5.12 20.48 10.24 25.6 15.36l138.24 138.24 261.12-261.12c5.12-5.12 15.36-10.24 25.6-10.24 20.48-5.12 40.96 15.36 40.96 35.84z"
-                            fill="rgb(150, 3, 3)" />
-                    </svg> le revêtement de sols (le carrelage)</li>
+                <li><i class="fa-solid fa-check"></i> l'architecture,</li>
+                <li><i class="fa-solid fa-check"></i> la maconnerie,</li>
+                <li><i class="fa-solid fa-check"></i> l'électricité,</li>
+                <li><i class="fa-solid fa-check"></i> le chauffage,</li>
+                <li><i class="fa-solid fa-check"></i> la plomberie,</li>
+                <li><i class="fa-solid fa-check"></i> la charpente,</li>
+                <li><i class="fa-solid fa-check"></i> la peinture,</li>
+                <li><i class="fa-solid fa-check"></i> la menuiserie,</li>
+                <li><i class="fa-solid fa-check"></i> le revêtement de sols (le carrelage)</li>
             </ul>
         </div>
         <!--le bloc contenant les membres de l'équipe-->
         <div class="equipe" id="equipe">
-            <h2>Notre équipe Cogeco-sarl</h2>
-            <h3>Engagement, Respect des Accords et cahiers de charges</h3>
+            <h3>Notre équipe Cogeco-sarl</h3>
+            <h4>Engagement, Respect des Accords et cahiers de charges</h4>
             <div class="prestataire">
                 <article>
                     <img src="img/communication.jpg" alt="photo chargée de marketing"
                         title="membre de l'équipe directrice">
-                    <h4>Dianne Ntumba</h4>
-                    <h5>Chargée de marketing</h5>
+                    <h5>Dianne Ntumba</h5>
+                    <h6>Chargée de marketing</h6>
                 </article>
                 <article class="articleBg_color">
                     <img src="img/ir.jpg" alt="photo de l 'Architecte" title="membre de l'équipe directrice">
-                    <h4>Paul Onembo </h4>
-                    <h5>ir Architecte, OPS, SPS</h5>
-                    <h5></h5>
+                    <h5>Paul Onembo </h5>
+                    <h6>ir Architecte, OPS, SPS</h6>
                 </article>
                 <article>
                     <img src="img/premium_photo-1682148573854-506784c34e23.jpg" alt="photo du Contrôleur technique"
                         title="membre de l'équipe directrice">
-                    <h4>Emmanuela Salama </h4>
-                    <h5>Contrôleur technique</h5>
+                    <h5>Emmanuela Salama </h5>
+                    <h6>Contrôleur technique</h6>
                 </article>
                 <article class="articleBg_color">
                     <img src="img/dg.jpg" alt="photo du générale Cogeco" title="membre de l'équipe directrice">
-                    <h4>Jeans-marc </h4>
-                    <h5>Directeur générale </h5>
+                    <h5>Jeans-marc </h5>
+                    <h6>Directeur générale </h6>
                 </article>
             </div>
         </div>
         <div id="realisations" class="realisations">
-            <h2>Nos Réalisations</h2>
-            <h3>Voici certaines de nos réalisations</h3>
+            <h3>Nos Réalisations</h3>
+            <h4>Voici certaines de nos réalisations</h4>
+            <!--
             <p> <img src="img/maison.jpg" alt="une de nos réalisations" class="images"> <img src="img/immo.jpg"
                     alt="une de nos réalisations" class="images"></p>
             <p> <img src="img/Achiguide  3.jpg" alt="une de nos réalisations" class="images"> <img
                     src="img/interieur.jpg" alt="une de nos réalisations" class="images"></p>
             <p> <img src="img/sheraton.1226323645.jpg" alt="une de nos réalisations" class="images"> <img
-                    src="img/plan.jpg" alt="une de nos réalisations" class="images"></p>
+                    src="img/plan.jpg" alt="une de nos réalisations" class="images"></p>-->
+                      <div class="slider">
+                        <div>
+                            <img src="img/Achiguide  3.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/Achiguide  3.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/Achiguide  3.jpg" alt="">
+                        </div>
+                      </div>
         </div>
         <div id="partenaires" class="partenaires">
             <h2>Nos partenaires</h2>
@@ -315,7 +275,25 @@
         [51.51, -0.047]
     ]).addTo(map);
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$(document).ready(function () {
+    $('.slider').slick({
+    autoplay:true,
+  autospeed: 300,
+  centerMode: true,
+  accessibility:true,
+  arrows:false,
+  centerPadding:'50px',
+  draggable:true,
+  infinite:true,
+  slidesPerRow:3
 
+    })
+})
+</script>
 <script src="js/script.js"></script>
+
 
 </html>

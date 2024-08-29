@@ -111,6 +111,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
     text-align: center;
     word-wrap: break-word;
     color: white;
@@ -127,7 +128,7 @@ main h3{
 }
 /*******************description*******************/
 .description{
-    padding: 20px;
+    padding: 30px;
     margin-top: 50px;
 }
 .description ol li{
@@ -140,11 +141,12 @@ main h3{
     list-style-type: circle;
 }
 .description ul li h4{
-    font-size: 20px;
-    color: gray;
+    font-size: 15px;
+    color:rgb(150, 3, 3)
 }
+/****************************service***************/
 .services {
-    margin-top: 100px;
+    padding: 30px;
     animation: monAnim 5s alternate infinite;
 }
 
@@ -165,45 +167,42 @@ main h3{
 }
 
 .services h3 {
+    color: rgb(150, 3, 3);
+    font-size: 30px;
+}
+.services h4{
+    font-size: 25px;
     color: gray;
-}
-
-.services p {
-    padding-top: 20px;
-}
-
-.services ul {
-    padding-top: 50px;
 }
 
 .services ul li {
-    padding-top: 10px;
     list-style-type: none;
-    font-weight: bold;
+    padding-top: 10px;
     color: #343a40;
 }
-
+/**********************equipe**************/
 .equipe {
-    margin-top: 100px;
-    margin-bottom: 100px;
+   padding: 30px;
 }
 
 .equipe h3 {
-    color: gray;
+    color: rgb(150, 3, 3);
+    font-size: 30px;
 }
-
+.equipe h4{
+    color: gray;
+    font-size: 25px;
+}
 .prestataire {
     margin: auto;
     margin-top: 100px;
     padding: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
 
-
 }
-
 article {
     margin: auto;
     flex-basis: 23%;
@@ -212,12 +211,14 @@ article {
     box-sizing: content-box;
     color: gray;
     border-bottom: 1px solid gray;
+    cursor: pointer;
     transition: 0.5s;
 }
 
 article img {
     width: 100%;
     height: 200px;
+    object-fit: cover;
 }
 
 .articleJSeffet {
@@ -227,34 +228,28 @@ article img {
     border-bottom: none;
     transition: 0.5s;
 }
-
+/*****************************réalisation*******************/
 .realisations {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    text-align: center;
-}
-
-.realisations h2
- {
-    text-align: left;
+    padding: 30px;
 }
 
 .realisations h3 {
-    padding-bottom: 50px;
+    font-size: 30px;
+    color: rgb(150, 3, 3);
+}
+.realisations h4{
+    font-size: 25px;
     color: gray;
 }
-
-.realisations img {
-    width: 40%;
-    padding: 5px;
-    transition: 0.5s;
+.slider{
+    width: 80%;
+    margin: auto;
 }
-
-.realisations img:hover {
-    width: 41%;
-    background-color: whitesmoke;
+.slider div img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
 }
-
 .partenaires h3 {
     color: gray;
 }
@@ -367,7 +362,19 @@ footer a {
     text-align: center;
     color: rgb(150, 3, 3);
 }
-
+@media screen and (max-width:1000px){
+    .prestataire {
+        margin: auto;
+        margin-top: 80px;
+    }
+    article {
+        flex-basis: 40%;
+        margin-top: 20px;
+    }
+    .articleJSeffet {
+        flex-basis: 45%;
+    }
+}
 @media screen and (max-width:700px) {
     header {
         display: block;
@@ -385,26 +392,40 @@ footer a {
         margin-top: 0%;
         display: none;
     }
-
+    main{
+        padding: 15px;
+    }
     main h1 {
         font-size: 70px;
     }
-    .logoimg {
-        display: none;
+    .services {
+        padding: 15px;
+        animation: none;
     }
-
+    .equipe{
+        padding: 15px;
+    }
     article {
-        margin: auto;
-        flex-basis: 48%;
-        margin-top: 10px;
+        flex-basis: 80%;
+        background-color: gray;
+        color: white;
     }
 
     .articleJSeffet {
-        flex-basis: 50%;
-        letter-spacing: 2px;
+        flex-basis: 80%;
+        letter-spacing: 0px;
         transition: 0.5s;
     }
+    .realisations{
+        padding: 15px;
+    }
+    .realisations img {
+        width: 80%;
+    }
 
+    .realisations img:hover {
+        width: 80%;
+    }
     .realisations img {
         width: 49%;
         padding: 0px;
@@ -432,32 +453,10 @@ footer a {
         width: 70%;
     }
 
-}
 
-@media screen and (max-width:700px) {
-    .services {
-        animation: none;
-    }
+   
 
-    article {
-        margin: auto;
-        flex-basis: 90%;
-        margin-top: 10px;
-    }
-
-    .articleJSeffet {
-        flex-basis: 90%;
-        letter-spacing: 0px;
-        transition: 0.5s;
-    }
-
-    .realisations img {
-        width: 80%;
-    }
-
-    .realisations img:hover {
-        width: 80%;
-    }
+  
 
     .formulaire_contact {
         width: 90%;
