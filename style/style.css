@@ -3,10 +3,18 @@ body {
     padding: auto;
     background-color: white;
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 header {
     padding: 1px;
     position: fixed;
@@ -68,10 +76,12 @@ header {
     cursor: pointer;
     display: none;
 }
+
 nav ul {
     list-style-type: none;
-    text-align:  center;
+    text-align: center;
 }
+
 nav ul li {
     padding: 0px 10px 0px 10px;
     display: inline-block
@@ -79,7 +89,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    padding:4px 8px 4px 8px;
+    padding: 4px 8px 4px 8px;
     color: white;
     background-color: rgb(85, 80, 80, 0.5);
     border-radius: 4px;
@@ -94,12 +104,31 @@ nav ul li a:hover {
     transition: ease 0.5s
 }
 
+/****************************main*******************/
+main {
+    padding: 20px;
+    background-image: url("https://images.unsplash.com/photo-1489514354504-1653aa90e34e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29uc3RydWN0aW9ufGVufDB8fDB8fHww");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    word-wrap: break-word;
+    color: white;
+}
+
+main h1 {
+    font-size: 100px;
+}
+main h2{
+    font-size:50px;
+}
+main h3{
+    font-size: 20px;
+}
+/**********************************/
+
 section {
     margin: auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   /* position: relative;
-    left: 10%;
-    width: 75%;*/
     padding: 10px;
 
 }
@@ -109,40 +138,6 @@ section div {
     padding: 20px;
     word-wrap: break-word;
 
-}
-
-.accueil h1 {
-    font-size: 250%;
-    color: rgb(150, 3, 3);
-}
-
-.accueil h2 {
-    color: gray;
-}
-
-.accueil h3 {
-    color: rgb(150, 3, 3);
-
-}
-
-.accueil p {
-    padding-top: 10px;
-}
-
-.accueil ol {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.accueil ol li {
-    padding-top: 10px;
-    list-style-type: upper-roman;
-    color: #343a40;
-    font-weight: bold;
-}
-
-.logo {
-    text-align: center;
 }
 
 .services {
@@ -236,8 +231,8 @@ article img {
     text-align: center;
 }
 
-.realisations h2,
-h3 {
+.realisations h2
+ {
     text-align: left;
 }
 
@@ -289,7 +284,7 @@ h3 {
     color: gray;
 }
 
-#map{
+#map {
     margin: auto;
     height: 500px;
 }
@@ -388,13 +383,9 @@ footer a {
         display: none;
     }
 
-    main {
-        margin: auto;
-        width: 96%;
-        position: relative;
-        left: 0px;
+    main h1 {
+        font-size: 70px;
     }
-
     .logoimg {
         display: none;
     }
