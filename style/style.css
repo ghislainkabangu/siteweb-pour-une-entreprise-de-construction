@@ -125,21 +125,24 @@ main h2{
 main h3{
     font-size: 20px;
 }
-/**********************************/
-
-section {
-    margin: auto;
-    padding: 10px;
-
-}
-
-section div {
-    margin: auto;
+/*******************description*******************/
+.description{
     padding: 20px;
-    word-wrap: break-word;
-
+    margin-top: 50px;
 }
-
+.description ol li{
+    padding-top:10px
+}
+.description ul{
+    padding-top: 10px;
+}
+.description ul li{
+    list-style-type: circle;
+}
+.description ul li h4{
+    font-size: 20px;
+    color: gray;
+}
 .services {
     margin-top: 100px;
     animation: monAnim 5s alternate infinite;

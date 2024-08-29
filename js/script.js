@@ -32,8 +32,8 @@ for (let j = 0; j < article.length; j++) {
 /********************************GSAP************************** */
 const texte = document.getElementById('slogan');
 gsap.to(texte, {
-    duration: 5,
-    text: "This is the new text",
+    duration: 10,
+    text: '" Votre maison, notre engagement "',
     ease: "none",
     repeat: -1
 });
