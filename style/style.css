@@ -497,11 +497,13 @@ footer a {
     }
 
     .services {
+        margin-top: 0px;
         padding: 15px;
         animation: none;
     }
 
     .equipe {
+        margin-top: 0px;
         padding: 15px;
     }
 
@@ -520,6 +522,7 @@ footer a {
     }
 
     .realisations {
+        margin-top: 0px;
         padding: 15px;
     }
 
@@ -532,6 +535,7 @@ footer a {
     }
 
     .realisations {
+        margin-top: 0px;
         padding: 15px;
     }
 
@@ -554,6 +558,7 @@ footer a {
     }
 
     .contact {
+        margin-top: 0px;
         padding: 15px;
     }
 
