@@ -9,17 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <!-------------------Gasap--------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-    <!-----------------------------------carrousel-->
+    <!-----------------------------------carrousel splider js--------------------------------->
 
     <link rel="stylesheet" href="style/style.css">
 </head>
@@ -154,28 +150,31 @@
         <div id="realisations" class="realisations">
             <h3>Nos Réalisations</h3>
             <h4>Voici certaines de nos réalisations</h4>
-            <!--
-            <p> <img src="img/maison.jpg" alt="une de nos réalisations" class="images"> <img src="img/immo.jpg"
-                    alt="une de nos réalisations" class="images"></p>
-            <p> <img src="img/Achiguide  3.jpg" alt="une de nos réalisations" class="images"> <img
-                    src="img/interieur.jpg" alt="une de nos réalisations" class="images"></p>
-            <p> <img src="img/sheraton.1226323645.jpg" alt="une de nos réalisations" class="images"> <img
-                    src="img/plan.jpg" alt="une de nos réalisations" class="images"></p>-->
-            <div class="slider">
+            <div class="realisationImageBox">
                 <div>
                     <img src="img/Achiguide  3.jpg" alt="">
                 </div>
                 <div>
-                    <img src="img/Achiguide  3.jpg" alt="">
+                    <img src="img/maison.jpg" alt="">
                 </div>
                 <div>
-                    <img src="img/Achiguide  3.jpg" alt="">
+                    <img src="img/interieur.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/sheraton.1226323645.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/plan.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/immo.jpg" alt="">
                 </div>
             </div>
         </div>
+        <!---------------------partenaires--------------------------->
         <div id="partenaires" class="partenaires">
-            <h2>Nos partenaires</h2>
-            <h3>Nous sommes en partenariat avec :</h3>
+            <h3>Nos partenaires</h3>
+            <h4>Nous sommes en partenariat avec :</h4>
 
             <div class="listepartenaires">
                 <div>
@@ -217,18 +216,30 @@
                     <img src="img/images (5).png" alt="logo partenaires">
                 </div>
             </div>
-
         </div>
-        <div id="localisation" class="localisation">
-            <h2>Localisation</h2>
-            <h3>Notre carte de localisation map de Kinshasa</h3>
-            <div id="map"></div>
+        <!---------------temoignage de nos clients------------------>
 
-
-        </div>
+        <!-------------------------contact---------------------------->
         <div id="contact" class="contact">
-            <h2>Nous Contacter</h2>
-            <h3>Veuillez remplir ce formulaire pour contacter nos services </h3>
+            <h3>Nous Contacter</h3>
+            <h4>Veuillez remplir ce formulaire pour contacter nos services </h4>
+            <div class="moyenContact">
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>téléphone</p>
+                    <p>+243 828 588 141</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>messagerie</p>
+                    <p>Cogeco-sarlrdc-cd@gmail.com</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>localisation</p>
+                    <p>Kinshasa-rdc</p>
+                </div>
+            </div>
             <div class="formulaire_contact">
                 <form action="">
                     <input type="text" name="" id="nom" placeholder="Votre Nom" required> <br> <br>
@@ -244,36 +255,17 @@
             </div>
             <footer>
 
-                <p></p>
                 <a href="tel:+243828588141" title="téléphone">Secrétariat-Tél : +243 (0) 828 588 141 , +243 (0) 902 123
                     888 </a><br><br>
                 <a href="mailto:kabangughislain77@gmail.com" title="pour Courier">E-mail :
                     secretariatcogeco-construct-rdc@.cd</a>
-                <P>Kinshasa, Republique Démocratique du Congo</P>
+                <P><i class="fa-solid fa-location-dot"></i> Kinshasa, Republique Démocratique du Congo</P>
                 <hr>
                 <p class="copyright">Copyright© 2024 COGECO-RDC , reserved. </p>
             </footer>
             </sction>
 </body>
-<script>
-    var map = L.map('map').setView([-4.325, 15.322222], 13);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-    var marker = L.marker([51.5, -0.09]).addTo(map);
-    var circle = L.circle([51.508, -0.11], {
-        color: 'red',
-        fillColor: '#f03',
-        fillOpacity: 0.5,
-        radius: 500
-    }).addTo(map);
-    var polygon = L.polygon([
-        [51.509, -0.08],
-        [51.503, -0.06],
-        [51.51, -0.047]
-    ]).addTo(map);
-</script>
+
 
 <script src="js/script.js"></script>
 

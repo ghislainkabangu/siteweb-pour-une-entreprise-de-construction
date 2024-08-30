@@ -177,11 +177,13 @@ main h3 {
 .services h3 {
     color: rgb(150, 3, 3);
     font-size: 30px;
+    text-align: center;
 }
 
 .services h4 {
     font-size: 25px;
     color: gray;
+    text-align: center;
 }
 
 .services ul li {
@@ -198,11 +200,13 @@ main h3 {
 .equipe h3 {
     color: rgb(150, 3, 3);
     font-size: 30px;
+    text-align: center;
 }
 
 .equipe h4 {
     color: gray;
     font-size: 25px;
+    text-align: center;
 }
 
 .prestataire {
@@ -250,21 +254,51 @@ article img {
 .realisations h3 {
     font-size: 30px;
     color: rgb(150, 3, 3);
+    text-align: center;
 }
 
 .realisations h4 {
     font-size: 25px;
     color: gray;
+    text-align: center;
 }
 
-.slider div img {
-    width: 50%;
-    height: 200px;
-    object-fit: contain;
+.realisationImageBox {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.realisationImageBox div {
+    flex-basis: 30%;
+    margin-top: 20px;
+
+
+}
+
+.realisationImageBox div img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/***********************partenaires*****************************/
+.partenaires {
+    padding: 30px;
 }
 
 .partenaires h3 {
+    color: rgb(150, 3, 3);
+    font-size: 30px;
+    text-align: center;
+}
+
+.partenaires h4 {
     color: gray;
+    font-size: 25px;
+    text-align: center;
 }
 
 .listepartenaires {
@@ -291,26 +325,58 @@ article img {
     transition: 0.5s;
 }
 
-.localisation h3 {
-    color: gray;
+/************************temoignages********************/
+.temoignages {
+    padding: 30px;
 }
 
-#map {
-    margin: auto;
-    height: 500px;
+/**********************contact***********************/
+.contact {
+    padding: 30px;
 }
 
 .contact h3 {
+    font-size: 30px;
+    color: rgb(150, 3, 3);
+    text-align: center;
+}
+
+.contact h4 {
     color: gray;
+    font-size: 25px;
+    text-align: center;
+}
+
+.moyenContact {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.moyenContact div {
+    flex-basis: 25%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.moyenContact div i {
+    font-size: 30px;
 }
 
 .formulaire_contact {
+    margin: auto;
     margin-top: 100px;
     margin-bottom: 50px;
-    width: 65%;
+    width: 400px;
+    padding: 20px;
+    padding-top: 40px;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 1px 1px 8px gainsboro;
+    box-shadow: 0px 0px 8px gainsboro;
     background-color: white;
 }
 
@@ -326,24 +392,31 @@ form input[type="email"] {
     width: 90%;
     height: 30px;
     background-color: white;
-    border-radius: 2px;
+    border-radius: 5px;
     border: 1px solid gray;
-    outline-color: red;
+    outline-color: rgb(150, 3, 3);
 }
 
 form input[type="text"],
 input[type="tel"],
 form input[type="email"]::-webkit-input-placeholder {
     opacity: 0.5;
-    padding: 5px;
+    padding: 2px 0px 2px 10px;
+    font-style: oblique;
 
 }
 
 textarea {
     width: 90%;
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 5px;
-    outline-color: red;
+    outline-color: rgb(150, 3, 3)
+}
+
+textarea::-webkit-input-placeholder {
+    opacity: 0.5;
+    padding: 2px 0px 2px 10px;
+    font-style: oblique;
 }
 
 button {
@@ -429,13 +502,15 @@ footer a {
 
     article {
         flex-basis: 80%;
-        background-color: gray;
-        color: white;
+
     }
 
     .articleJSeffet {
         flex-basis: 80%;
         letter-spacing: 0px;
+        background-color: white;
+        color: gray;
+        border-bottom: 1px solid gray;
         transition: 0.5s;
     }
 
@@ -443,21 +518,20 @@ footer a {
         padding: 15px;
     }
 
-    .realisations img {
-        width: 80%;
+    .realisationImageBox {
+        width: 99%;
     }
 
-    .realisations img:hover {
-        width: 80%;
+    .realisationImageBox div {
+        flex-basis: 80%;
     }
 
-    .realisations img {
-        width: 49%;
-        padding: 0px;
+    .realisations {
+        padding: 15px;
     }
 
-    .realisations img:hover {
-        width: 50%;
+    .partenaires {
+        padding: 15px;
     }
 
     .listepartenaires {
@@ -474,13 +548,23 @@ footer a {
         margin-top: 10px;
     }
 
+    .contact {
+        padding: 15px;
+    }
+
+    .moyenContact {
+        margin: auto;
+        width: 90%;
+    }
+
+    .moyenContact div {
+        flex-basis: 90%;
+
+    }
+
     .formulaire_contact {
         width: 70%;
     }
-
-
-
-
 
 
     .formulaire_contact {
