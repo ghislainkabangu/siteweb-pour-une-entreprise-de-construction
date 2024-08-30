@@ -1,6 +1,6 @@
 body {
     margin: auto;
-    padding: auto;
+    padding: 0 auto;
     background-color: white;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -441,6 +441,7 @@ button:hover {
 
 footer {
     margin-top: 200px;
+
 }
 
 footer a {
@@ -578,6 +579,6 @@ footer a {
     }
 
     footer {
-        margin-top: 100px;
+        margin-top: 150px;
     }
 }
