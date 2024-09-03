@@ -503,9 +503,25 @@ footer a {
         animation: none;
     }
 
+    .services h3 {
+        text-align: left;
+    }
+
+    .services h4 {
+        text-align: left;
+    }
+
     .equipe {
         margin-top: 0px;
         padding: 15px;
+    }
+
+    .equipe h3 {
+        text-align: left;
+    }
+
+    .equipe h4 {
+        text-align: left;
     }
 
     article {
@@ -527,6 +543,14 @@ footer a {
         padding: 15px;
     }
 
+    .realisations h3 {
+        text-align: left;
+    }
+
+    .realisations h4 {
+        text-align: left;
+    }
+
     .realisationImageBox {
         width: 99%;
     }
@@ -535,13 +559,16 @@ footer a {
         flex-basis: 80%;
     }
 
-    .realisations {
-        margin-top: 0px;
+    .partenaires {
         padding: 15px;
     }
 
-    .partenaires {
-        padding: 15px;
+    .partenaires h3 {
+        text-align: left;
+    }
+
+    .partenaires h4 {
+        text-align: left;
     }
 
     .listepartenaires {
@@ -561,6 +588,14 @@ footer a {
     .contact {
         margin-top: 0px;
         padding: 15px;
+    }
+
+    .contact h3 {
+        text-align: left;
+    }
+
+    .contact h4 {
+        text-align: left;
     }
 
     .moyenContact {
