@@ -19,14 +19,14 @@ for (let x = 0; x < link.length; x++) {
   });
 }
 /********************** GETION DES INTERACTION DES IMAGES DES MEMBRES DE L'EQUIPE********************************* */
-let article = document.querySelectorAll("article");
-for (let j = 0; j < article.length; j++) {
-  article[j].addEventListener("mouseover", () => {
-    article[j].classList.add("articleJSeffet");
+let prestataireDiv = document.querySelectorAll(".prestataireDiv");
+for (let j = 0; j < prestataireDiv.length; j++) {
+  prestataireDiv[j].addEventListener("mouseover", () => {
+    prestataireDiv[j].classList.add("articleJSeffet");
   });
 
-  article[j].addEventListener("mouseout", () => {
-    article[j].classList.remove("articleJSeffet");
+  prestataireDiv[j].addEventListener("mouseout", () => {
+    prestataireDiv[j].classList.remove("articleJSeffet");
   });
 }
 /********************************GSAP************************** */

@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <!-----------------------------------carrousel splider js--------------------------------->
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -40,7 +40,7 @@
             </svg></a>
         <nav>
             <ul>
-                <li> <a href="#accueil"><i class="fa-solid fa-house"></i></a></li>
+                <li> <a href="#accueil" title="accueil"><i class="fa-solid fa-house"></i></a></li>
                 <li><a href="#services" title="Voir nos différents Services">Services</a></li>
                 <li><a href="#equipe" title="notre equipe">Equipe</a></li>
                 <li><a href="#realisations" title="Voir nos différentes réalisations">Réalisations</a></li>
@@ -75,7 +75,7 @@
                 des fournisseurs de grand renom sur le marché mondial.</p>
             <p>Notre mission est de transformer les idées de nos clients en réalité tangible, en offrant des services de
                 construction qui allient innovation, sécurité et respect de l'environnement.</p>
-            <p>La stratégie de <b> Cogeco sarl</b> s'oriente autour de ces piliers :</p>
+            <p>La stratégie de notre entreprise s'oriente autour de piliers suivants:</p>
             <ul>
                 <li> <b>Qualité</b> : Nous nous engageons à respecter les normes les plus élevées dans chaque projet
                 </li>
@@ -91,59 +91,75 @@
     </section>
     <!-------------------le bloc contenant les diffs services-->
     <div id="services" class="services">
-        <h3>Nos Services</h3>
-        <h4>Réparation et bricolage</h4>
-        <p>Qu'il s'agisse d'une première installation, d'une réfection, d'une amélioration ou d'une réparation, tout
-            ce qui est électricité, plomberie et menuiserie relèvent également de sa compétence. D'ailleurs, il est
-            possible de confier à ce prestataire l'amélioration du système de chauffage, de climatisation et
-            d'isolation thermique, ainsi que les travaux de remise aux normes de chacune de ces installations.</p>
-        <p>L'entretien extérieur faisant partie aussi de ses services , elle peut bien effectuer la pose des
-            clôtures et des portails électriques.</p>
-        <p>Bref, rassemblant sous le même toit tous les corps d'état en rapport avec la construction, la Company
-            générale de construction assure les services se rattachant à : </p>
-        <ul>
-            <li><i class="fa-solid fa-check"></i> l'architecture,</li>
-            <li><i class="fa-solid fa-check"></i> la maconnerie,</li>
-            <li><i class="fa-solid fa-check"></i> l'électricité,</li>
-            <li><i class="fa-solid fa-check"></i> le chauffage,</li>
-            <li><i class="fa-solid fa-check"></i> la plomberie,</li>
-            <li><i class="fa-solid fa-check"></i> la charpente,</li>
-            <li><i class="fa-solid fa-check"></i> la peinture,</li>
-            <li><i class="fa-solid fa-check"></i> la menuiserie,</li>
-            <li><i class="fa-solid fa-check"></i> le revêtement de sols (le carrelage)</li>
-        </ul>
+        <h3>Services Offerts</h3>
+        <div class="BoxServices">
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <h4>Construction Résidentielle :</h4>
+                <p>Maisons individuelles, appartements, rénovations</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <h4>Construction Commerciale :</h4>
+                <p>Bureaux, magasins, espaces commerciaux</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <h4>Construction Industrielle :</h4>
+                <p>Entrepôts, usines, infrastructures</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <h4>Gestion de Projet :</h4>
+                <p>Supervision complète du projet, de la conception à la livraison</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <h4>Consultation Technique :</h4>
+                <p>Conseils sur les meilleures pratiques et choix de matériaux.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <h4>Construction Résidentielle :</h4>
+                <p>Maisons individuelles, appartements, rénovations</p>
+            </div>
+
+        </div>
     </div>
-    <!--le bloc contenant les membres de l'équipe-->
-    <div class="equipe" id="equipe">
+    <!-------------------------------------le bloc contenant les membres de l'équipe-------------------------->
+    <article class="equipe" id="equipe">
         <h3>Notre équipe Cogeco-sarl</h3>
-        <h4>Engagement, Respect des Accords et cahiers de charges</h4>
+        <p>Notre équipe est composée d'experts en ingénierie, architecture, gestion de projet et artisans qualifiés.
+            Nous croyons en la formation continue et veillons à ce que notre personnel soit toujours à la pointe des
+            nouvelles technologies et réglementations</p>
         <div class="prestataire">
-            <article>
+            <div class="prestataireDiv">
                 <img src="img/communication.jpg" alt="photo chargée de marketing" title="membre de l'équipe directrice">
                 <h5>Dianne Ntumba</h5>
                 <h6>Chargée de marketing</h6>
-            </article>
-            <article class="articleBg_color">
+            </div>
+            <div class="prestataireDiv">
                 <img src="img/ir.jpg" alt="photo de l 'Architecte" title="membre de l'équipe directrice">
                 <h5>Paul Onembo </h5>
                 <h6>ir Architecte, OPS, SPS</h6>
-            </article>
-            <article>
+            </div>
+            <div class="prestataireDiv">
                 <img src="img/premium_photo-1682148573854-506784c34e23.jpg" alt="photo du Contrôleur technique"
                     title="membre de l'équipe directrice">
                 <h5>Emmanuela Salama </h5>
                 <h6>Contrôleur technique</h6>
-            </article>
-            <article class="articleBg_color">
+            </div>
+            <div class="prestataireDiv">
                 <img src="img/dg.jpg" alt="photo du générale Cogeco" title="membre de l'équipe directrice">
                 <h5>Jeans-marc </h5>
                 <h6>Directeur générale </h6>
-            </article>
+            </div>
         </div>
-    </div>
+    </article>
+    <!---------------------------realisations-------------------------------->
     <div id="realisations" class="realisations">
         <h3>Nos Réalisations</h3>
-        <h4>Voici certaines de nos réalisations</h4>
+        <p>Nous avons réalisé plusieurs projets emblématiques</p>
         <div class="realisationImageBox">
             <div>
                 <img src="img/Achiguide  3.jpg" alt="">
@@ -168,55 +184,46 @@
     <!---------------------partenaires--------------------------->
     <div id="partenaires" class="partenaires">
         <h3>Nos partenaires</h3>
-        <h4>Nous sommes en partenariat avec :</h4>
+        <p>Nous sommes en partenariat avec :</p>
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <div class="splide__slide">
+                        <img src="img/images (5).png" alt="logo partenaires">
+                    </div>
+                    <div class="splide__slide">
+                        <img src="img/images (7).png" alt="logo partenaires">
+                    </div>
+                    <div class="splide__slide">
+                        <img src="img/foreste.png" alt="logo partenaires">
+                    </div>
+                    <div class="splide__slide">
+                        <img src="img/gcl.png" alt="logo partenaires">
+                    </div>
+                    <div class="splide__slide">
+                        <img src="img/regideso.png" alt="logo partenaires">
+                    </div>
+                    <div class="splide__slide">
+                        <img src="img/bacom.jpg" alt="logo partenaires">
+                    </div>
+                    <div class="splide__slide">
+                        <img src="img/gb.jpg" alt="logo partenaires">
+                    </div>
+                    <div class="splide__slide">
+                        <img src="img/images (5).png" alt="logo partenaires">
+                    </div>
 
-        <div class="listepartenaires">
-            <div>
-                <img src="img/bacom.jpg" alt="logo partenaires">
-            </div>
-            <div>
-                <img src="img/fameco.jpg" alt="logo partenaires">
-            </div>
-            <div>
-                <img src="img/build.png" alt="logo partenaires">
-            </div>
-            <div>
-                <img src="img/cilu.png" alt="logo partenaires">
-            </div>
-            <div>
-                <img src="img/images (5).png" alt="logo partenaires">
-            </div>
-            <div>
-                <img src="img/images (7).png" alt="logo partenaires">
+                </ul>
             </div>
         </div>
-        <div class="listepartenaires">
-            <div>
-                <img src="img/foreste.png" alt="logo partenaires">
-            </div>
-            <div>
-                <img src="img/gcl.png" alt="logo partenaires">
-            </div>
-            <div>
-                <img src="img/gb.jpg" alt="logo partenaires">
-            </div>
-            <div>
-                <img src="img/regideso.png" alt="logo partenaires">
-            </div>
-            <div>
-                <img src="img/bacom.jpg" alt="logo partenaires">
-            </div>
-            <div>
-                <img src="img/images (5).png" alt="logo partenaires">
-            </div>
-        </div>
+
     </div>
     <!---------------temoignage de nos clients------------------>
 
     <!-------------------------contact---------------------------->
     <div id="contact" class="contact">
         <h3>Nous Contacter</h3>
-        <h4>Veuillez remplir ce formulaire pour contacter nos services </h4>
+        <p>Veuillez remplir ce formulaire pour contacter nos services </p>
         <div class="moyenContact">
             <div>
                 <i class="fa-solid fa-phone"></i>
@@ -262,6 +269,31 @@
         </footer>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            perPage: 4,
+            pagination: true,
+            autoplay: true,
+            interval: 1000,
+            breakpoints: {
+                1000: {
+                    perPage: 2,
+                }
+            },
+            breakpoints: {
+                700: {
+                    perPage: 1
+                }
+            }
+        });
+        splide.mount();
+    });
+</script>
+
 <script src="js/script.js"></script>
 
 </html>
