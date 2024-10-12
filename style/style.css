@@ -16,16 +16,8 @@ html {
 }
 
 header {
-    padding: 1px;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    background-image: url(../img/ej-yao-D46mXLsQRJw-unsplash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 6px 6px 10px gainsboro;
 
+    background-color: white;
 }
 
 .sid_nav_barre {
@@ -82,6 +74,7 @@ header {
     display: none;
 }
 
+/*******************menu desktop**************/
 nav ul {
     list-style-type: none;
     text-align: center;
@@ -95,14 +88,13 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     padding: 4px 8px 4px 8px;
-    border-radius: 4px;
-    color: white;
+    color: #5569a7;
     transition: ease 0.5s
 }
 
 nav ul li a:hover {
-    font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #5569a7;
     transition: ease 0.5s
 }
 
@@ -169,40 +161,38 @@ section div img {
 .services {
     margin-top: 100px;
     padding: 10px;
+    background-color: gainsboro;
 }
 
 .services h3 {
     font-size: 30px;
     text-align: center;
-    color: #5569a7;
+    color: white;
 }
 
 .BoxServices {
-    width: 90%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 110px;
 }
 
 .BoxServices div {
-    flex-basis: 26%;
+    flex-basis: 15%;
     margin-top: 30px;
     padding: 10px;
-    text-align: center;
-    box-shadow: 0px 0px 5px gainsboro;
     border-radius: 5px;
+    text-align: center;
+    background-color: white;
 }
 
 .BoxServices div h4 {
     font-size: 15px;
-
+    color: gray;
 }
 
-.BoxServices div:hover {
-    background-color: #5569a7;
-    color: white;
-
+.BoxServices div i {
+    color: gray;
 }
 
 /********************----------------------**equipe********-------------------------******/
@@ -210,6 +200,7 @@ article {
     margin-top: 100px;
     padding: 10px;
     text-align: center;
+    padding-bottom: 100px;
 }
 
 article h3 {
@@ -229,13 +220,13 @@ article h3 {
 
 .prestataire div {
     margin-top: 20px;
-    flex-basis: 23%;
+    flex-basis: 20%;
     padding: auto;
     text-align: center;
     box-sizing: content-box;
-    border-bottom: 1px solid gray;
     cursor: pointer;
     transition: 0.5s;
+    background-color: gainsboro;
 }
 
 .prestataire div img {
@@ -244,33 +235,21 @@ article h3 {
     object-fit: cover;
 }
 
-.prestataire div h6 {
-    color: black;
+.prestataire div h5 {
+    color: gray;
 }
 
-/*
-.articleJSeffet {
-    flex-basis: 30%;
-    background-image: url(../img/ej-yao-D46mXLsQRJw-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-    color: white;
-    border-bottom: none;
-    transition: 0.5s;
-}
-.articleJSeffet h5, h6{
-    color: white;
-}*/
 /*****************************réalisation*******************/
 .realisations {
     margin-top: 100px;
     padding: 10px;
     text-align: center;
+    background-color: gainsboro;
 }
 
 .realisations h3 {
     font-size: 30px;
-    color: #5569a7;
+    color: white
 }
 
 .realisationImageBox {
@@ -279,6 +258,7 @@ article h3 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-bottom: 100px;
 }
 
 .realisationImageBox div {
@@ -310,10 +290,12 @@ article h3 {
     font-size: 30px;
     text-align: center;
 }
-
-
-.listepartenaires div img {
-    width: 50%;
+.splide {
+    padding-top:50px;
+}
+.partenaires div img {
+    width: 100px;
+    object-fit: cover;
     border-radius: 50%;
     box-shadow: 0px 0px 5px gainsboro;
     transition: 0.5s;
@@ -322,53 +304,23 @@ article h3 {
 /**********************contact***********************/
 .contact {
     margin-top: 100px;
-    padding: 30px;
+    padding: 10px;
     text-align: center;
+    padding-bottom: 100px;
 }
 
 .contact h3 {
     font-size: 30px;
-    color: #5569a7;
+    color: gray;
     text-align: center;
-}
-
-.moyenContact {
-    margin: auto;
-    width: 97%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.moyenContact div {
-    flex-basis: 25%;
-    text-align: center;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 50px;
-    box-shadow: 0px 0px 5px gainsboro;
-    transition: 0.5s;
-}
-
-.moyenContact div i {
-    font-size: 30px;
-}
-
-.moyenContact div:hover {
-    background-color: #5569a7;
-    color: white;
-    transition: 0.5s;
 }
 
 .formulaire_contact {
     margin: auto;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    width: 600px;
+    width: 900px;
     padding: 20px;
     padding-top: 40px;
     text-align: center;
-    box-shadow: 6px 6px 15px gainsboro;
     background-color: white;
 }
 
@@ -382,10 +334,11 @@ form input[type="text"],
 input[type="tel"],
 form input[type="email"] {
     width: 90%;
-    height: 35px;
+    height: 45px;
     background-color: white;
     border: 1px solid gray;
-    outline-color: #5569a7
+    outline-color: #5569a7;
+    transition: 0.5s;
 }
 
 form input[type="text"],
@@ -397,8 +350,9 @@ form input[type="email"]::-webkit-input-placeholder {
 
 textarea {
     width: 90%;
-    border-radius: 5px;
     padding: 5px;
+    height: 100px;
+    border: 1px solid gray;
     outline-color: #5569a7
 }
 
@@ -408,10 +362,9 @@ textarea::-webkit-input-placeholder {
 }
 
 button {
-    width: 45%;
-    height: 45px;
+    width: 45.2%;
+    height: 55px;
     border: none;
-    border-radius: 5px;
     background-color: #5569a7;
     color: white;
     transition: 0.5s;
@@ -419,26 +372,49 @@ button {
 
 button:hover {
     font-weight: bold;
-    height: 50px;
+    height: 60px;
     transition: 0.5s;
 }
 
 /****************************footer***************************************/
 footer {
-    margin-top: 200px;
+    background-color: gray;
+    margin-top: 100px;
+    padding: 10px;
     text-align: left;
+    color: white;
 
 }
 
-footer a {
+.contenaireFooter {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenaireFooter div {
+    flex-basis: 20%;
+    padding: 10px;
+}
+
+.contenaireFooter div h5 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.contenaireFooter div a {
     text-decoration: none;
-    color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.contenaireFooter div a:hover {
+    font-weight: bold;
 }
 
 .copyright {
     font-size: small;
     text-align: center;
-    color: #5569a7
+    color: black;
 }
 
 @media screen and (max-width:1000px) {
@@ -446,7 +422,14 @@ footer a {
         flex-basis: 40%;
     }
 
-    .articleJSeffet {
+    .formulaire_contact {
+        width: 600px;
+    }
+    .contenaireFooter {
+        flex-wrap: wrap;
+    }
+    
+    .contenaireFooter div {
         flex-basis: 45%;
     }
 }
@@ -489,22 +472,16 @@ footer a {
         flex-basis: 90%;
     }
 
+    .BoxServices {
+        flex-wrap: wrap;
+    }
+
     .BoxServices div {
-        flex-basis: 90%;
+        flex-basis: 85%;
     }
 
     .prestataire div {
-        margin: auto;
         flex-basis: 90%;
-    }
-
-    .articleJSeffet {
-        flex-basis: 80%;
-        letter-spacing: 0px;
-        background-color: white;
-        color: gray;
-        border-bottom: 1px solid gray;
-        transition: 0.5s;
     }
 
     .realisationImageBox {
@@ -519,23 +496,11 @@ footer a {
         flex-basis: 85%;
     }
 
-
-    .moyenContact {
-        margin: auto;
+    .formulaire_contact {
         width: 90%;
     }
 
-    .moyenContact div {
+    .contenaireFooter div {
         flex-basis: 90%;
-        margin-top: 30px;
-
-    }
-
-    .formulaire_contact {
-        width: 80%;
-    }
-
-    footer {
-        margin-top: 150px;
     }
 }
